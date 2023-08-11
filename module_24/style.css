@@ -4,3 +4,9 @@ h1{
 li{
  color: green;
 }
+#fruits-title{
+    color: black;
+}
+.fruits-name{
+    color: aqua;
+}
