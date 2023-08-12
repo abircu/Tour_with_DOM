@@ -13,3 +13,9 @@ for (const fruits of allFruits) {
 }
 const otherClass = document.getElementsByClassName("others");
 console.log(otherClass.innerText);
+// quary selector.
+const someLi = document.querySelectorAll("#fruits-cotainer li");
+for (const li of someLi) {
+  console.log(li.innerText);
+}
+document.querySelector("#fruits-cotainer li");
