@@ -15,8 +15,25 @@ changeColor.onclick = greenButton;
 function greenButton() {
   document.body.style.backgroundColor = "green";
 }
-// pption 04: using html element id
+// pption 03(final): using html element id [we will use sometimes]
 const purpleButton = document.getElementById("purple");
 purpleButton.onclick = function makePurple() {
   document.body.style.backgroundColor = "purple";
 };
+// option 4:Add event listener
+
+const pinkButton = document.getElementById("pinky");
+pinkButton.addEventListener("click", makepink);
+function makepink() {
+  document.body.style.backgroundColor = "pink";
+}
+// option 4:another way to add event listner
+const pinkyButton = document.getElementById("pinky");
+pinkyButton.addEventListener("click", function anotherWay() {
+  document.body.style.backgroundColor = "pink";
+});
+
+// option 5: alawys use it(final part).
+document.getElementById("golden-road").addEventListener("click", function () {
+  document.body.style.backgroundColor = "goldenrod";
+});
